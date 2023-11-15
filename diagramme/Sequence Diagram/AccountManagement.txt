@@ -1,0 +1,28 @@
+@startuml
+!define ARROW_STYLE open
+!define ACTIVATE_STYLE solid
+
+title "Carpool Reservation System - Account Management"
+
+actor User as User
+actor Admin as Admin
+
+User -> Admin: Request Admin Verification for Account Management
+activate Admin
+Admin -> System: Verify Account Management Request
+activate System
+System -> System: Admin Control and Verification
+
+alt Admin Verification Successful
+    System --> Admin: Verification Succeeded
+    Admin --> User: Request Approved
+
+else Admin Verification Failed
+    System --> Admin: Verification Failed
+    deactivate System
+    Admin --> User: Request Failed
+end
+
+deactivate Admin
+
+@enduml

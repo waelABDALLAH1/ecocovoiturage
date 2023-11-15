@@ -1,0 +1,19 @@
+@startuml
+!define ARROW_STYLE open
+!define ACTIVATE_STYLE solid
+
+title "Carpool Reservation System - Trip Search"
+
+actor Passenger as Passenger
+
+Passenger -> System: Specify Search Criteria
+activate System
+System -> System: Validate and Process Search Criteria
+alt Valid Criteria
+    System --> Passenger: Display Matching Trips
+else Invalid Criteria
+    System --> Passenger: Display Error Message
+end
+deactivate System
+
+@enduml
