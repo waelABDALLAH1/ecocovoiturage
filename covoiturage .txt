@@ -1,0 +1,23 @@
+Système de Réservation de Covoiturage Écologique
+
+Ce projet vise à développer une application web qui permettra aux utilisateurs de proposer et de réserver des covoiturages avec un accent sur l'éco-responsabilité. L'application encouragera le partage de trajets pour réduire l'empreinte carbone et favoriser une conduite plus respectueuse de l'environnement.
+
+Acteurs :
+
+Conducteur : Peut proposer des trajets, spécifier les détails du trajet, gérer les réservations, etc.
+Passager : Peut rechercher des trajets, réserver des places, payer pour les trajets, noter les conducteurs, etc.
+Administrateur : Peut gérer les comptes, surveiller les avis, gérer les violations des politiques, etc.
+Fonctionnalités :
+
+Proposition de Trajets : Les conducteurs peuvent proposer des trajets en indiquant leur point de départ, leur destination, les horaires, le nombre de places disponibles, le coût par passager, etc.
+Recherche de Trajets : Les passagers peuvent rechercher des trajets en fonction de leur point de départ, de leur destination, de leurs préférences écologiques, etc.
+Réservations de Places : Permet aux passagers de réserver des places dans les véhicules des conducteurs, avec un système de paiement intégré.
+Gestion des Avis et Notations : Les passagers peuvent noter les conducteurs et la qualité de leur covoiturage.
+Gestion des Comptes : Les utilisateurs peuvent gérer leurs profils, leurs réservations passées, etc.
+Diagrammes UML suggérés :
+
+Diagramme de cas d'utilisation
+Diagramme de classes pour modéliser les utilisateurs, les trajets, les réservations, les paiements, etc.
+Diagramme de séquence pour montrer comment un conducteur propose un trajet et comment un passager réserve une place.
+Diagramme d'activité pour modéliser les flux de travail, comme la réservation de places.
+Ce projet mettra en avant la conception d'une application web axée sur la mobilité durable, tout en mettant en œuvre des fonctionnalités de réservation, de paiement et de gestion des avis. Veillez à documenter soigneusement vos diagrammes UML pour refléter les interactions entre les conducteurs, les passagers et le système.
