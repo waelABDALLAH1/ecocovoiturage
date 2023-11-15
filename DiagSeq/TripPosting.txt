@@ -1,0 +1,19 @@
+@startuml
+!define ARROW_STYLE open
+!define ACTIVATE_STYLE solid
+
+title "Trip Posting - Sequence Diagram"
+
+actor Driver as Driver
+
+Driver -> System: Provide Trip Details
+activate System
+System -> System: Validate and Save Trip
+alt Valid Trip Details
+    System --> Driver: Trip Posted Successfully
+else Invalid Trip Details
+    System --> Driver: Display Error Message
+end
+deactivate System
+
+@enduml

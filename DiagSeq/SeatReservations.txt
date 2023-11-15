@@ -1,0 +1,23 @@
+@startuml
+title "Seat Reservations - Sequence Diagram"
+
+actor Passenger as User
+actor Driver
+
+User -> System: Reserve Seat
+activate System
+System -> System: Check Seat Availability
+alt Seats Available
+    System -> Driver: Notify about Reservation
+    activate Driver
+    Driver -> System: Confirm or Decline Reservation
+    deactivate Driver
+    System -> System: Process Payment (Integrated Payment System)
+    System --> User: Reservation Confirmed
+else No Seats Available
+    System --> User: No Available Seats
+end
+
+deactivate System
+
+@enduml

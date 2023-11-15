@@ -1,0 +1,15 @@
+@startuml
+title "Review and Rating Management - Sequence Diagram"
+
+actor Passenger as User
+actor Driver
+
+User -> System: Rate and Comment on Driver
+activate System
+System ->> Driver: Receive Review Notification
+activate Driver
+deactivate Driver
+System --> User: Rating and Review Updated
+deactivate System
+
+@enduml
